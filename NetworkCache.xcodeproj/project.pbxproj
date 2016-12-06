@@ -14,6 +14,10 @@
 		F240671E1DF66F49007CC789 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F240671C1DF66F49007CC789 /* LaunchScreen.storyboard */; };
 		F24067291DF66F49007CC789 /* NetworkCacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24067281DF66F49007CC789 /* NetworkCacheTests.swift */; };
 		F24067341DF66F49007CC789 /* NetworkCacheUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24067331DF66F49007CC789 /* NetworkCacheUITests.swift */; };
+		F24067421DF66FA8007CC789 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24067411DF66FA8007CC789 /* EndPoint.swift */; };
+		F24067441DF67207007CC789 /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24067431DF67207007CC789 /* Object.swift */; };
+		F24067461DF672D0007CC789 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24067451DF672D0007CC789 /* WebService.swift */; };
+		F24067481DF6A3F5007CC789 /* CachedWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24067471DF6A3F5007CC789 /* CachedWebService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		F240672F1DF66F49007CC789 /* NetworkCacheUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkCacheUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F24067331DF66F49007CC789 /* NetworkCacheUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCacheUITests.swift; sourceTree = "<group>"; };
 		F24067351DF66F49007CC789 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F24067411DF66FA8007CC789 /* EndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		F24067431DF67207007CC789 /* Object.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Object.swift; sourceTree = "<group>"; };
+		F24067451DF672D0007CC789 /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		F24067471DF6A3F5007CC789 /* CachedWebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CachedWebService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +111,10 @@
 				F240671A1DF66F49007CC789 /* Assets.xcassets */,
 				F240671C1DF66F49007CC789 /* LaunchScreen.storyboard */,
 				F240671F1DF66F49007CC789 /* Info.plist */,
+				F24067411DF66FA8007CC789 /* EndPoint.swift */,
+				F24067431DF67207007CC789 /* Object.swift */,
+				F24067451DF672D0007CC789 /* WebService.swift */,
+				F24067471DF6A3F5007CC789 /* CachedWebService.swift */,
 			);
 			path = NetworkCache;
 			sourceTree = "<group>";
@@ -259,7 +271,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F24067421DF66FA8007CC789 /* EndPoint.swift in Sources */,
 				F24067161DF66F49007CC789 /* ViewController.swift in Sources */,
+				F24067481DF6A3F5007CC789 /* CachedWebService.swift in Sources */,
+				F24067441DF67207007CC789 /* Object.swift in Sources */,
+				F24067461DF672D0007CC789 /* WebService.swift in Sources */,
 				F24067141DF66F49007CC789 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,6 +521,7 @@
 				F240673A1DF66F49007CC789 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F240673B1DF66F49007CC789 /* Build configuration list for PBXNativeTarget "NetworkCacheTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +530,7 @@
 				F240673D1DF66F49007CC789 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F240673E1DF66F49007CC789 /* Build configuration list for PBXNativeTarget "NetworkCacheUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +539,7 @@
 				F24067401DF66F49007CC789 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

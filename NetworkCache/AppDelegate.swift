@@ -16,6 +16,53 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        /*[
+         {
+         "id": "694c1223-6ed9-4633-9a40-145520fbaa7b",
+         "title": "Command Line Tools with Swift"
+         },
+         {
+         "id": "651728f9-33e0-4a66-bd75-171764c82045",
+         "title": "Structs and Mutation"
+         },
+         {
+         "id": "fb465ae0-a84e-411a-a9f1-dafea9a25d1d",
+         "title": "Understanding Value Type Performance"
+         }
+         ]*/
+        let endPoint: EndPoint<[Object]> = EndPoint(url: NSURL(string: "http://localhost/episodes.json") as! URL, parse: {data in
+            
+            if let jsonList = data as? [JSONDictonary] {
+                var list: Array<Object> = []
+                for json in jsonList {
+                    let obj = Object(json: json)
+                    if let obj = obj {
+                        list.append(obj)
+                    }
+                }
+                
+                return list
+            }
+            
+            return nil
+        })
+        
+//        let webService = WebSevice()
+//        webService.load(endPoint, completion: { result in
+//            if let value = result.value {
+//                print(value)
+//            }
+//        })
+//        
+        let webservice = WebSevice()
+        let cachewebService = CachedWebService(webservice)
+        cachewebService.load(endPoint, completion: { result in
+            if let value = result.value {
+                print(value)
+            }
+        })
+        
         return true
     }
 
